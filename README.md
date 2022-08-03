@@ -10,6 +10,13 @@ exists for the purpose of building a base JDK upon which GraalVM CE 17 is built.
 1. checkout to branch `release/jvmci/22.1`
 2. `$ sh buildJdk.sh`
 
+* Artifacts for **iOS**:
+    * `build/labsjdk/images/graal-builder-jdk` -> `JAVA_HOME` to build GraalVM from sources
+    * `xcode/jdk-arm64-ios-d.a`
+    * `xcode/jdk-arm64-ios-r.a`
+    * `xcode/jdk-x86-64-ios-simulator-d.a`
+    * `xcode/jdk-x86-64-ios-simulator-r.a`
+
 #### A labsjdk binary can be built as follows:
 ```
 # Find latest jvmci-* tag in current branch.
