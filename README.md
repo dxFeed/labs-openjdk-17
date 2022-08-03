@@ -2,10 +2,16 @@
 
 The latest release is available at https://github.com/graalvm/labs-openjdk-17/releases/latest
 
-This is a fork of https://github.com/openjdk/jdk17u that
+This is a copy of https://github.com/graalvm/labs-openjdk-17 that
 exists for the purpose of building a base JDK upon which GraalVM CE 17 is built.
 
-A labsjdk binary can be built as follows:
+
+## How to build jvmci-22.1-b06
+```
+sh buildJdk.sh
+```
+
+#### A labsjdk binary can be built as follows:
 ```
 # Find latest jvmci-* tag in current branch.
 JVMCI_VERSION=$(git log --decorate | grep -E 'tag: jvmci-\d+\.\d+-b\d+' | sed 's/.*(\(tag: .*\))/\1/g' | tr ',' '\n' | grep 'tag:' | sed 's/.*tag: \(jvmci-[^,)]*\).*/\1/g' | sort -nr | head -1)
