@@ -7,8 +7,12 @@ exists for the purpose of building a base JDK upon which GraalVM CE 17 is built.
 
 
 ## How to build jvmci-22.1-b06
-1. checkout to branch `release/jvmci/22.1`
-2. `$ sh buildJdk.sh`
+1. Download `Java17` archive for your [platform](https://github.com/graalvm/labs-openjdk-17/releases/tag/jvmci-22.1-b06)
+2. For Mac OS only: `sudo xattr -rd com.apple.quarantine path_to_archive`
+3. Unzip `Java17` archive
+4. Set `JAVA_HOME` to unzipped `Java17`
+5. checkout to branch `release/jvmci/22.1`
+6. `$ sh buildJdk.sh`
 
 * Artifacts for **iOS**:
     * `build/labsjdk/images/graal-builder-jdk` -> `JAVA_HOME` to build GraalVM from sources
