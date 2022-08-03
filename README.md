@@ -7,9 +7,8 @@ exists for the purpose of building a base JDK upon which GraalVM CE 17 is built.
 
 
 ## How to build jvmci-22.1-b06
-```
-sh buildJdk.sh
-```
+1. checkout to branch `release/jvmci/22.1`
+2. `$ sh buildJdk.sh`
 
 #### A labsjdk binary can be built as follows:
 ```
