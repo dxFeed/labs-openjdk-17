@@ -12,6 +12,7 @@ exists for the purpose of building a base JDK upon which GraalVM CE 17 is built.
 3. Unzip `Java17` archive
 4. Set `JAVA_HOME` to unzipped `Java17`
 5. checkout to branch `release/jvmci/22.1`
+6. `$ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer`
 6. `$ sh buildJdk.sh`
 
 * Artifacts for **iOS**:
